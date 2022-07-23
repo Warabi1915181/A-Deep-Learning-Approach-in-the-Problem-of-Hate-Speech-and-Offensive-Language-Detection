@@ -16,9 +16,11 @@ Three types of models can be applied:
 #### split_data.py
   - randomly split a dataset into training, validation and testing datasets.
 #### preprocess.py
-  - if datasets are not preprocessed, preprocess the Tweets in the datasets such as removing url or mention in each Tweet, then store preprocessed data as a .pkl file in ./cache; if .pkl files exist, load the .pkl files directly to skip preprocessing
+  - if datasets are not preprocessed, preprocess the Tweets in the datasets such as removing url or mention in each Tweet, then store preprocessed data as a .pkl file in ./cache
+  - if .pkl files exist, load the .pkl files directly to skip preprocessing
 #### feature_extractor.py
-  - a simple feature extractor that index each word in each Tweet for LSTM and bidirectional LSTM RNNs; distilled BERT model does not require this.
+  - a simple feature extractor that index each word in each Tweet for LSTM and bidirectional LSTM RNNs
+  - distilled BERT model does not require this.
 #### utils.py
   - core functions for defining the models and their behaviour
 #### main.py
